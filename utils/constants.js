@@ -15,7 +15,7 @@ const USER_VALIDATION_OBJECT = {
     name: Joi.string().required().min(2).max(30),
     email: Joi.string().required().email(),
     password: Joi.string().required().min(5),
-    dateBirth: Joi.date().required().less('now').greater('1-1-1900'),
+    birthday: Joi.date().required().less('now').greater('1-1-1900'),
     gender: Joi.string(),
   }),
 };
